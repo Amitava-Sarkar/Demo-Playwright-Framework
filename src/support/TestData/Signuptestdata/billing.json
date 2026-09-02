@@ -1,0 +1,20 @@
+{
+  "cardDetails": {
+    "cardHolderName": "John Doe",
+    "email": "john.doe@example.com",
+    "phoneNumber": "1234567890",
+    "cardNumber": "4242424242424242",
+    "expiryDate": "1230",
+    "cvc": "123"
+  },
+  "successMessage": {
+    "paymentMethodChangeSuccessMessage": "Payment Method successfully changed",
+    "planUpgradedSuccessMessage": "Plan updated successfully"
+  },
+  "errorMessage": {
+    "cardHolderRequired": "Card Holder is required",
+    "emailRequired": "Email is required",
+    "phoneNumberRequired": "Phone number is required",
+    "cardInformationRequired": "Card information required"
+  }
+}

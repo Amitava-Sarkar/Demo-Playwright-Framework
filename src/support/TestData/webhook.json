@@ -1,0 +1,40 @@
+{
+  "webhook": {
+    "webhookName": "Test Webhook",
+    "webhookNewName": "Test Automation Webhook",
+    "importerName": "Unmatch_Column",
+    "webhookUrl": "https://webhook.site/a28d259c-ff0c-4a49-8f37-81324d214456",
+    "secretKey": "1234567890",
+    "rateLimit": "1"
+  },
+  "log": {
+    "successResponse": "200",
+    "successStatus": "StatusFAILED",
+    "errorResponse": "400",
+    "errorStatus": "Error",
+    "importerDetails": "Unmatch_Column"
+  },
+  "logDetails": {
+    "url": "https://webhook.site/02635bc2-56f2-4908-a0d0-eae598907086",
+    "webhookType": "Record Webhook",
+    "importSlug": "3ff32d53-7b3e-49bf-8e6b-f567e1745c6a",
+    "importerName": "sample"
+  },
+  "validation": {
+    "webhookCreationSuccessMessage": "Webhook created",
+    "webhookDeletionSuccessMessage": "The webhook has been deleted",
+    "webhookEditingSuccessMessage": "Webhook edited",
+    "testSendSuccessMessage": "Test sent"
+  },
+  "errorValidation": {
+    "webhookNameRequired": "Name is required",
+    "webhookUrlRequired": "Please enter a URL"
+  },
+  "apiKey": {
+    "apiKeyName": "Test API Key"
+  },
+  "apiKeyValidation": {
+    "apiKeyCreationSuccessMessage": "Your new API key was created",
+    "apiKeyDeletionSuccessMessage": "The credentials have been deleted"
+  }
+}

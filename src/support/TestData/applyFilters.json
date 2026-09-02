@@ -1,0 +1,131 @@
+{
+  "uploadFiles": {
+    "importerName": "xyzPractice",
+    "sampleCsv": "src/support/uploadFiles/xyzPractice.csv",
+    "importFileButton": "Import File"
+  },
+  "applyFilter": {
+     "tooltip": "Apply filters",
+     "applyButton": "Apply",
+     "placeholders": {
+       "selectField": "Select a field",
+       "selectOperator": "Select an operator",
+       "selectValue": "Select a value",
+       "enterValue": "Enter a value"
+     },
+     "columns": {
+       "date": "Date",
+       "time": "Time",
+       "boolean": "Boolean",
+       "string": "String",
+       "integer": "Integer",
+       "float": "Float",
+       "email": "Email",
+       "dropdown": "Dropdown",
+       "url": "Url"
+     } ,
+     "operators": {
+       "is": "is",
+       "isEmpty": "is empty",
+       "isNotEmpty": "is not empty",
+       "contains": "contains",
+       "doesNotContain": "does not contain",
+       "isNot": "is not",
+       "isGreaterThan": "is greater than",
+       "isLessThan": "is less than"
+     },
+    "stringColumnOperators": [
+      "contains",
+      "does not contain",
+      "is",
+      "is not",
+      "is empty",
+      "is not empty"
+    ],
+    "integerAndFloatColumnOperators": [
+      "is",
+      "is not",
+      "is greater than",
+      "is less than"
+    ],
+    "emailAndUrlColumnOperators": [
+      "contains",
+      "does not contain",
+      "is",
+      "is not",
+      "is empty",
+      "is not empty"
+    ],
+    "dateColumnOperators": [
+      "is",
+      "is not",
+      "is greater than",
+      "is less than",
+      "is today",
+      "is tomorrow",
+      "is yesterday",
+      "is within the last week",
+      "is within the next week",
+      "is within the last month",
+      "is within the next month",
+      "is empty",
+      "is not empty"
+    ],
+    "timeColumnOperators" : [
+      "contains",
+      "does not contain",
+      "is",
+      "is not",
+      "is empty",
+      "is not empty"
+    ],
+    "dropdownColumnOperators": [
+      "is",
+      "is not",
+      "is empty",
+      "is not empty"
+    ],
+     "values": {
+       "true": "True",
+       "false": "False",
+       "empty": "",
+       "testString": "test",
+       "dropdownOptions": ["FIRST", "SECOND", "THIRD"]
+     },
+     "dropdownCellIdPrefix": "dropdown",
+     "clearPrefix": "clear",
+     "booleanValues": ["True", "False"],
+     "booleanCellIdPrefix": "boolean",
+     "stringCellIdPrefix": "string",
+     "integerCellIdPrefix": "integer",
+     "emailCellIdPrefix": "email",
+     "urlCellIdPrefix": "url",
+     "timeCellIdPrefix": "time", 
+     "firstIntegerCellIndex": 0,
+     "firstEmailCellIndex": 0,
+     "firstUrlCellIndex": 0,
+     "integerFilterValues": {
+       "greaterThan": "1000",
+       "greaterThanNoMatch": "100000",
+       "lessThan": "100000",
+       "lessThanNoMatch": "10"
+     },
+     "timevalue": "16", 
+     "integerCellsToVerify": {
+       "greaterThan": 10,
+       "lessThan": 9
+     },
+     "emailAndUrlCellsToVerify": {
+       "doesNotContain": 9
+     },
+     "stringCellsToFill": 4,
+     "emptyStringCellsToVerify": 10,
+     "stringCellsFillWaitTimeout": 2000,
+     "filteredCount": {
+       "isOperator": 1,
+       "doesNotContain": 0,
+       "isNotOperator": 0,
+       "noMatch": 0
+     }
+  }
+}

@@ -1,0 +1,679 @@
+{
+  "labels": {
+    "deleteConditionGroup": "Delete condition group"
+  },
+  "counts": {
+    "initial": 1,
+    "afterSuccessiveAdds": [2, 3],
+    "afterSingleAdd": 2,
+    "afterDelete": 1
+  },
+  "conditionFIlter": {
+    "columns": {
+       "date": "Date",
+       "time": "Time",
+       "boolean": "Boolean",
+       "string": "String",
+       "integer": "Integer",
+       "float": "Float",
+       "email": "Email",
+       "dropdown": "Dropdown",
+       "url": "Url"
+     } ,
+     "operators": {
+       "is": "is",
+       "isEmpty": "is empty",
+       "isNotEmpty": "is not empty",
+       "contains": "contains",
+       "doesNotContain": "does not contain",
+       "isNot": "is not",
+       "isGreaterThan": "is greater than",
+       "isLessThan": "is less than",
+       "isToday": "is today",
+       "isTomorrow": "is tomorrow",
+       "isYesterday": "is yesterday"
+     },
+     "values": {
+       "true": "True",
+       "false": "False",
+       "isEmpty": "",
+       "testString": "test",
+       "dropdownOptions": ["FIRST", "SECOND", "THIRD"]
+     },
+     "stringCellIdPrefix": "string",
+     "integerCellIdPrefix": "integer",
+     "booleanCellIdPrefix": "boolean",
+     "dropdownCellIdPrefix": "dropdown",
+     "emailCellIdPrefix": "email",
+     "timeCellIdPrefix": "time",
+     "dateCellIdPrefix": "date",
+     "urlCellIdPrefix": "url",
+     "firstEmailCellIndex": 0,
+     "firstTimeCellIndex": 0,
+     "firstDateCellIndex": 0,
+     "firstUrlCellIndex": 0,
+     "timeValue": "16",
+     "clearPrefix": "clear",
+     "stringCellsToFill": 4,
+     "stringCellsToFillForDropdown": 10,
+     "integerFilterValues": {
+       "greaterThan": "20000",
+       "greaterThanNoMatch": "100000",
+       "lessThan": "20000",
+       "lessThanNoMatch": "10"
+     },
+     "dropdownIsEmpty": {
+       "cellsToFill": 7,
+       "dropdownCellsCount": 10,
+       "cellsToClear": 5
+     },
+     "stringIntegerFilterCases": [
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" }
+       },
+       {
+         "string": { "operator": "isNot", "value": "testString" },
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" }
+       },
+       {
+         "string": { "operator": "isEmpty" },
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" }
+       },
+       {
+         "string": { "operator": "isNotEmpty" },
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" }
+       },
+       {
+         "string": { "operator": "isNotEmpty" },
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" }
+       },
+       {
+         "string": { "operator": "doesNotContain", "value": "testString" },
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" }
+       },
+       {
+         "string": { "operator": "doesNotContain", "value": "testString" },
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" }
+       }
+     ],
+     "stringBooleanFilterCases": [
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "boolean": { "operator": "is", "value": "true" }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "boolean": { "operator": "is", "value": "false" }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "boolean": { "operator": "isNot", "value": "true" }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "boolean": { "operator": "isNot", "value": "false" }
+       }
+     ],
+     "stringDropdownFilterCases": [
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "dropdown": { "operator": "isNot", "iterateOptions": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "dropdown": { "operator": "isEmpty" }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "dropdown": { "operator": "isNotEmpty" }
+       },
+       {
+         "string": { "operator": "doesNotContain", "value": "testString" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "string": { "operator": "doesNotContain", "value": "testString" },
+         "dropdown": { "operator": "isNot", "iterateOptions": true }
+       },
+       {
+         "string": { "operator": "is", "value": "testString" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "string": { "operator": "isNot", "value": "testString" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       }
+     ],
+     "stringEmailFilterCases": [
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "email": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "email": { "operator": "doesNotContain", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "email": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "email": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "email": { "operator": "isEmpty" }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "email": { "operator": "isNotEmpty" }
+       },
+       {
+         "string": { "operator": "doesNotContain", "value": "testString" },
+         "email": { "operator": "isNotEmpty" }
+       },
+       {
+         "string": { "operator": "isNot", "value": "testString" },
+         "email": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "isNotEmpty" },
+         "email": { "operator": "isNotEmpty" }
+       }
+     ],
+     "stringTimeFilterCases": [
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "time": { "operator": "contains", "useTimeValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "time": { "operator": "doesNotContain", "useTimeValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "time": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "time": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "time": { "operator": "isEmpty" }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "time": { "operator": "isNotEmpty" }
+       },
+       {
+         "string": { "operator": "doesNotContain", "value": "testString" },
+         "time": { "operator": "isNotEmpty" }
+       },
+       {
+         "string": { "operator": "isNot", "value": "testString" },
+         "time": { "operator": "contains", "useTimeValue": true }
+       },
+       {
+         "string": { "operator": "isNotEmpty" },
+         "time": { "operator": "isNotEmpty" }
+       }
+     ],
+     "integerBooleanFilterCases": [
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "boolean": { "operator": "is", "value": "true" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "boolean": { "operator": "is", "value": "false" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "boolean": { "operator": "isNot", "value": "true" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "boolean": { "operator": "isNot", "value": "false" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "boolean": { "operator": "is", "value": "true" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "boolean": { "operator": "is", "value": "false" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "boolean": { "operator": "isEmpty" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "boolean": { "operator": "isNotEmpty" }
+       }
+     ],
+     "integerEmailFilterCases": [
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "email": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "email": { "operator": "doesNotContain", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "email": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "email": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "email": { "operator": "isEmpty" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "email": { "operator": "isNotEmpty" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "email": { "operator": "isNotEmpty" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "email": { "operator": "contains", "useFirstCellValue": true }
+       }
+     ],
+     "integerDropdownFilterCases": [
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "dropdown": { "operator": "isNot", "iterateOptions": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "dropdown": { "operator": "isEmpty" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "dropdown": { "operator": "isNotEmpty" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "dropdown": { "operator": "isNot", "iterateOptions": true }
+       }
+     ],
+     "integerTimeFilterCases": [
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "time": { "operator": "contains", "useTimeValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "time": { "operator": "doesNotContain", "useTimeValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "time": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "time": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "time": { "operator": "isEmpty" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "time": { "operator": "isNotEmpty" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "time": { "operator": "isNotEmpty" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "time": { "operator": "contains", "useTimeValue": true }
+       }
+     ],
+     "booleanDropdownFilterCases": [
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "false" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "boolean": { "operator": "isNot", "value": "true" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "boolean": { "operator": "isNot", "value": "false" },
+         "dropdown": { "operator": "isNot", "iterateOptions": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "dropdown": { "operator": "isEmpty" }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "dropdown": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNotEmpty" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "boolean": { "operator": "isEmpty" },
+         "dropdown": { "operator": "isNotEmpty" }
+       }
+     ],
+     "booleanEmailFilterCases": [
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "email": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "false" },
+         "email": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "email": { "operator": "doesNotContain", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "email": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "email": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "email": { "operator": "isEmpty" }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "email": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNot", "value": "false" },
+         "email": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNotEmpty" },
+         "email": { "operator": "contains", "useFirstCellValue": true }
+       }
+     ],
+     "booleanDateFilterCases": [
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "date": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "false" },
+         "date": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "date": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "date": { "operator": "isGreaterThan", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "date": { "operator": "isLessThan", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "date": { "operator": "isEmpty" }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "date": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNot", "value": "false" },
+         "date": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNotEmpty" },
+         "date": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "date": { "operator": "isToday" }
+       }
+     ],
+     "booleanTimeFilterCases": [
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "time": { "operator": "contains", "useTimeValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "false" },
+         "time": { "operator": "contains", "useTimeValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "time": { "operator": "doesNotContain", "useTimeValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "time": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "time": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "time": { "operator": "isEmpty" }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "time": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNot", "value": "false" },
+         "time": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNotEmpty" },
+         "time": { "operator": "contains", "useTimeValue": true }
+       }
+     ],
+     "stringUrlFilterCases": [
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "url": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "url": { "operator": "doesNotContain", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "url": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "url": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "url": { "operator": "isEmpty" }
+       },
+       {
+         "string": { "operator": "contains", "value": "testString" },
+         "url": { "operator": "isNotEmpty" }
+       },
+       {
+         "string": { "operator": "doesNotContain", "value": "testString" },
+         "url": { "operator": "isNotEmpty" }
+       },
+       {
+         "string": { "operator": "isNot", "value": "testString" },
+         "url": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "string": { "operator": "isNotEmpty" },
+         "url": { "operator": "isNotEmpty" }
+       }
+     ],
+     "integerUrlFilterCases": [
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "url": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "url": { "operator": "doesNotContain", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "url": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "url": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "url": { "operator": "isEmpty" }
+       },
+       {
+         "integer": { "operator": "isGreaterThan", "valueKey": "greaterThan" },
+         "url": { "operator": "isNotEmpty" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "url": { "operator": "isNotEmpty" }
+       },
+       {
+         "integer": { "operator": "isLessThan", "valueKey": "lessThan" },
+         "url": { "operator": "contains", "useFirstCellValue": true }
+       }
+     ],
+     "booleanUrlFilterCases": [
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "url": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "false" },
+         "url": { "operator": "contains", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "url": { "operator": "doesNotContain", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "url": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "url": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "url": { "operator": "isEmpty" }
+       },
+       {
+         "boolean": { "operator": "is", "value": "true" },
+         "url": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNot", "value": "false" },
+         "url": { "operator": "isNotEmpty" }
+       },
+       {
+         "boolean": { "operator": "isNotEmpty" },
+         "url": { "operator": "contains", "useFirstCellValue": true }
+       }
+     ],
+     "urlDropdownFilterCases": [
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "dropdown": { "operator": "isNot", "iterateOptions": true }
+       },
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "dropdown": { "operator": "isEmpty" }
+       },
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "dropdown": { "operator": "isNotEmpty" }
+       },
+       {
+         "url": { "operator": "isNotEmpty" },
+         "dropdown": { "operator": "is", "iterateOptions": true }
+       },
+       {
+         "url": { "operator": "is", "useFirstCellValue": true },
+         "dropdown": { "operator": "isNot", "iterateOptions": true }
+       }
+     ],
+     "urlTimeFilterCases": [
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "time": { "operator": "contains", "useTimeValue": true }
+       },
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "time": { "operator": "doesNotContain", "useTimeValue": true }
+       },
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "time": { "operator": "is", "useFirstCellValue": true }
+       },
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "time": { "operator": "isNot", "useFirstCellValue": true }
+       },
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "time": { "operator": "isEmpty" }
+       },
+       {
+         "url": { "operator": "contains", "useFirstCellValue": true },
+         "time": { "operator": "isNotEmpty" }
+       },
+       {
+         "url": { "operator": "isNotEmpty" },
+         "time": { "operator": "isNotEmpty" }
+       },
+       {
+         "url": { "operator": "is", "useFirstCellValue": true },
+         "time": { "operator": "contains", "useTimeValue": true }
+       }
+     ]
+  }
+}

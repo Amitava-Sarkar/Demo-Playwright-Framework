@@ -1,0 +1,29 @@
+{
+  "tooltip": "Merge multiple columns into ",
+  "heading": "Combine Data for ",
+  "description": "Combine data from 2 or more columns into 1 column",
+  "delimiterOption": [
+    "None",
+    "Space",
+    "Comma",
+    "Semicolon",
+    "Dash",
+    "Tab",
+    "Dot"
+  ],
+  "selectMultipleColumn": "Select columns to combine",
+  "selectDelimiter": "Choose a delimiter to add between the columns",
+  "successToastMessage": "Columns combined successfully",
+  "validationOnAddingMoreThan10": "You can only select up to 10 options",
+  "dataPreviewToolTipMessage": [
+    "1 William 456.78 example1@test.com https://example.com 06-01-2025 14:45",
+    "2 James 654.32 example2@test.com https://testsite.org 06-01-2025 14:45",
+    "3 Liam 111.22 example3@test.com https://samplepage.in 06-01-2025 14:59"
+  ],
+  "closeImporterPopup": {
+    "title": "Are you sure?",
+    "description": "Closing the importer will lose any changes.",
+    "closeButton": "Close",
+    "cancelButton": "Cancel"
+  }
+}

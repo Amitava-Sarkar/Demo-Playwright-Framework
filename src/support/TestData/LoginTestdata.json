@@ -1,0 +1,29 @@
+{
+  "email": "manpreet+123@flatirons.com",
+  "password": "Admin@123",
+  "invalidPassword": "Admin@1234",
+  "invalidEmail": "invalidemail",
+  "validationURL": "https://staging-fuse-aws.swovo.com/account/importers",
+  "signupURL": "https://staging-fuse-aws.swovo.com/users/sign-up",
+  "forgotPasswordURL": "https://staging-fuse-aws.swovo.com/users/forgot-password",
+  "labels": {
+    "subText": "Data onboarding made fast, easy, and painless.",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "signIn": "Sign In",
+    "forgotPassword": "Forgot your password?",
+    "doNotHaveAnAccount": "Don’t have an account?",
+    "sendEmail": "Send Email",
+    "invalidEmailOrPassword": "Invalid email or password"
+  },
+  "inputTypes": {
+    "text": "text",
+    "password": "password"
+  },
+  "Validations": {
+    "emptyEmailErrorMessage": "Email is required",
+    "invalidEmailErrorMessage": "Invalid email",
+    "passwordRequiredErrorMessage": "This is a required field",
+    "forgetPasswordValidation": "Email sent successfully"
+  }
+}

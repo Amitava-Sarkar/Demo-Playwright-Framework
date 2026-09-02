@@ -1,0 +1,198 @@
+{
+  "success": {
+    "statusCode": 200,
+    "statusText": "OK"
+  },
+
+  "unauthorized": {
+    "statusCode": 401,
+    "message": "Unauthorized"
+  },
+
+  "errorWithoutPayload": {
+    "statusCode": 500,
+    "error": "Internal Server Error",
+    "contentType": "text/html",
+    "htmlDoctype": "<!doctype"
+  },
+
+  "wrongPassword": {
+    "email": "manpreet+123@flatirons.com",
+    "password": "WrongPassword123",
+    "statusCode": 401,
+    "error": "Invalid email or password"
+  },
+
+  "wrongEmail": {
+    "email": "wronguser@flatirons.com",
+    "password": "Admin@123",
+    "statusCode": 401
+  },
+
+  "emailNotConfirmed": {
+    "email": "unconfirmed@example.com",
+    "password": "Admin@123",
+    "statusCode": 401,
+    "error": "Unauthorized"
+  },
+
+  "invalidEmail": {
+    "email": "invalid-email",
+    "password": "Admin@123",
+    "statusCode": 401
+  },
+
+  "badRequest": {
+    "statusCode": 401,
+    "error": "Unauthorized"
+  },
+
+  "invalidEntityResponse": {
+    "invalidEmail": "Invalid email or password"
+  },
+
+  "signup": {
+    "firstName": "API",
+    "lastName": "Automation",
+    "emailContains": "manpreet+",
+    "onboardingCreateTemplateStep": false,
+    "onboardingTryItOutStep": false,
+    "onboardingCustomizeImportStep": false
+  },
+
+  "existingEmail": {
+    "email": "manpreet+123@flatirons.com",
+    "statusCode": 409,
+    "statusText": "Conflict",
+    "contentType": "application/json",
+    "message": "This email already has an account. Please try logging in"
+  },
+
+  "weakPassword": {
+    "password": "123",
+    "statusCode": 409,
+    "statusText": "Conflict",
+    "messages": [
+      "Password is too short (minimum is 6 characters)",
+      "Password Complexity requirement not met",
+      "Length should be 6-128 characters",
+      "1 uppercase, 1 lowercase, 1 digit and 1 special character"
+    ]
+  },
+
+  "signupInvalidEmail": {
+    "email": "test@com"
+  },
+
+  "resendEmail": {
+    "contentType": "application/json",
+    "message": "Confirmation email sent successfully"
+  },
+
+  "teamInvitation": {
+    "wasRecentlyCreated": true,
+    "archived": true,
+    "status": "invited",
+    "invitedById": 952
+  },
+
+  "webhook": {
+    "name": "API Webhook",
+    "url": "https://webhook.site/7978a767-d2e9-4c93-8d6b-8e86a945a897",
+    "templateId": 33019,
+    "archived": false,
+    "rateLimit": 1,
+    "secretTokenMasked": "**********",
+    "templateName": "Unmatch_Column",
+    "webhookType": "records",
+    "deleted": {
+      "archived": true,
+      "templateId": 32957
+    }
+  },
+
+  "importer": {
+    "name": "API Importer",
+    "editedName": "API Automation",
+    "archived": false,
+    "deletedArchived": true,
+    "reorderPosition": 2,
+    "stringColumn": {
+      "column_type": "string",
+      "label": "String",
+      "internal_key": "String",
+      "description": "Only accepts string value",
+      "required": false,
+      "unique": false,
+      "archived": false
+    },
+    "stringColumnPayload": {
+      "internal_key": "String",
+      "label": "String",
+      "description": "String column",
+      "column_type": "string",
+      "pattern": null,
+      "required": false,
+      "transformations": [],
+      "unique": false,
+      "validations": [],
+      "values": []
+    },
+    "integerColumnPayload": {
+      "column_type": "integer",
+      "description": "",
+      "internal_key": "Integer",
+      "label": "Integer",
+      "pattern": null,
+      "required": false,
+      "transformations": [],
+      "unique": false,
+      "validations": [
+        {
+          "validation_type": "integer",
+          "message": "Must be an integer",
+          "is_default": true
+        }
+      ],
+      "values": []
+    },
+    "booleanColumnPayload": {
+      "column_type": "boolean",
+      "description": "",
+      "internal_key": "Boolean",
+      "label": "Boolean",
+      "pattern": null,
+      "required": false,
+      "transformations": [],
+      "unique": false,
+      "validations": [
+        {
+          "validation_type": "boolean",
+          "message": "Must be True or False",
+          "is_default": true
+        }
+      ],
+      "values": []
+    },
+    "unprocessable": {
+      "statusCode": 422,
+      "statusText": "Unprocessable Content",
+      "nameBlankError": "Name can't be blank",
+      "columnTypeNotInList": "Column type is not included in the list",
+      "requiredNotInList": "Required is not included in the list",
+      "labelBlank": "Label can't be blank",
+      "internalKeyBlank": "Column not found",
+      "internalKeyBlank1" : "Internal key can't be blank",
+      "validationsInvalid": "Validations is invalid",
+      "nullColumnTypePayload": {
+        "column_type": null
+      },
+      "nullLabelPayload": {
+        "label": null
+      },
+      "nullInternalKeyPayload": {
+        "internal_key": null
+      }
+    }
+  }
+}

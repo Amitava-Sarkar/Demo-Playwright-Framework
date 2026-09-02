@@ -1,0 +1,9 @@
+Integer,String,float,Email,URL,dateTime,date
+1,William,456.78,example1@test.com,https://example.com,06-01-2025 14:45,2024-01-13
+2,James,654.32,example2@test.com,https://testsite.org,06-01-2025 14:45,2024-03-12
+3,Liam,111.22,example3@test.com,https://samplepage.in,06-01-2025 14:59,2024-04-13
+
+
+
+
+

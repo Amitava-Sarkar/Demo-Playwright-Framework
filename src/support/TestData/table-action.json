@@ -1,0 +1,65 @@
+{
+    "uploadFiles": {
+        "importFileButton": "Import File"
+    },
+    "deleteRow": {
+        "tooltip": "Select rows to delete",
+        "deleteSelectedRowPopup": "Delete Selected Row",
+        "yesDeleteButton": "Yes, delete",
+        "cancelButton": "Cancel",
+        "initialRowCount": 3,
+        "singleRowDeletedMessage": "1 rows deleted",
+        "allRowsDeletedCount": "0",
+        "rowsDeletedMessage": "rows deleted",
+        "remainingRowIndex": 20,
+        "emptyCellsCount": 7,
+        "emptyCellValue": "",
+        "autoRowAddValue": "123"
+    },
+    "row": {
+        "idPrefix": "row-id",
+        "checkboxCellPrefix": "checkbox-cell",
+        "columnsWithInput": [2, 5],
+        "columnsWithTextarea": [0, 1, 3, 4, 6]
+    },
+    "search": {
+        "maxRetries": 3,
+        "retryWaitTimeout": 200,
+        "noResultsText": "0 results",
+        "rowsVisibleWaitTimeout": 5000,
+        "resultsTextSuffix": " results"
+    },
+    "findAndReplacePopup": {
+        "title": "Find & Replace",
+        "description": "Enter the text you want to find and replace.",
+        "findInput": "Find",
+        "replaceInput": "Replace With",
+        "useRegexCheckbox": "Use regular expression matching",
+        "useCaseSensitiveCheckbox": "Use case sensitive matching",
+        "findAndReplaceButton": "Find and Replace",
+        "replacedValidationMessage": "row(s) have been updated.",
+        "textNotFoundErrorMessage": "Text could not be found in any cells.",
+        "noMatchReplaceValue": "Automation",
+        "stringCellIdPrefix": "string",
+        "firstStringCellIndex": 0
+    },
+    "filters": {
+        "noDataCount": "(0)",
+        "invalidData": "invalid",
+        "errorColor": "rgb(229, 115, 84)",
+        "secondStringCellIndex": 1
+    },
+    "filterByErrors": {
+        "integerInput": "Integer",
+        "urlInput": "https://examplecom",
+        "integerErrorValidation": "Showing rows with an error in the Integer column",
+        "urlErrorValidation": "Showing rows with an error in the Url column",
+        "integerColumn": "Integer",
+        "urlColumn": "Url",
+        "errorCount": 2,
+        "integerCellIdPrefix": "integer",
+        "urlCellIdPrefix": "url",
+        "filterWaitTimeout": 2000,
+        "optionDropdownWaitTimeout": 2000
+    }
+}

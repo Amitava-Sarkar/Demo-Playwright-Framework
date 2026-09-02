@@ -1,0 +1,31 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+.env
+/allure-report/
+/allure-results/
+/allure-report.zip
+/src/auth/user.json
+.DS_Store
+playwright-report/
+# Monocart reports
+monocart-report/
+
+# Playwright test artifacts
+test-results/
+
+# Accessibility report
+accessibility-report/
+accessibility-results/
+
+# Lighthouse report
+lighthouse-report/
+.lighthouseci/
+
+# JUnit results
+junit-results/

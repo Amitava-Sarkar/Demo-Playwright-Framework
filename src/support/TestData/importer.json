@@ -1,0 +1,18 @@
+{
+  "input": "ABC",
+  "editImporterName": "Test Importer",
+  "columnInput": "abc",
+  "descriptionInput": "This column is for testing",
+  "uploadFiles": {
+    "unmatchedColumnCsv": "src/support/uploadFiles/Unmatch_Column.csv",
+    "importerName": "Unmatch_Column"
+  },
+  "validation": {
+    "ImporterCreationSuccessMessage": "Importer created successfully",
+    "importerUpdatedSuccessMessage": "Importer was updated successfully",
+    "columnDeletedSuccessMessage": "deleted successfully",
+    "columnUndeletedSuccessMessage": "Undo successful"
+  },
+  "dataImportedSuccessfullyMessage": "Data submitted successfully!",
+  "dataImportedSuccessfullyDescription": "Your data has been submitted successfully. Click below to continue."
+}

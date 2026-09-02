@@ -1,0 +1,31 @@
+{
+  "nameFields": {
+    "firstName": "Test",
+    "lastName": "Automation"
+  },
+  "successValidation": {
+    "firstNameUpdated": "First Name updated successfully.",
+    "lastNameUpdated": "Last Name updated successfully."
+  },
+  "errorValidation": {
+    "firstNameRequired": "First name is required",
+    "lastNameRequired": "Last name is required",
+    "emailRequired": "Email is required"
+  },
+  "passwordValidation": {
+    "currentPasswordRequired": "Password is required",
+    "newPassword": "Admin@123",
+    "confirmPasswordRequired": "Please confirm your new password",
+    "passwordMismatch": "Passwords do not match",
+    "currentPasswordIncorrect": "Current password is incorrect",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordTooShortForm": "Passwords must contain at least 6 characters and maximum of 128 characters, including at least 1 letter, 1 number and 1 special character.",
+    "passwordMissingUppercaseForm": "Passwords must contain at least 6 characters and maximum of 128 characters, including at least 1 letter, 1 number and 1 special character.",
+    "passwordTooWeak": "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character",
+    "passwordSameAsCurrent": "Invalid current password, password is too short or password confirmation did not match"
+  },
+  "password": {
+    "newPassword": "Admin@123",
+    "confirmPassword": "Admin@1231"
+  }
+}

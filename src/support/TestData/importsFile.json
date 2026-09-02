@@ -1,0 +1,7 @@
+{
+    "rowCount": 3,
+    "validations" : {
+        "tooltipText" : "Copy to clipboard",
+        "deleteMessage" : "The import has been deleted"
+    }
+}

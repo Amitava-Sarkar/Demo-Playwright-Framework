@@ -1,0 +1,66 @@
+{
+  "brandingTab": "Branding",
+  "title": "Customize Importer",
+  "description": "Customize the styling of the importer to make this experience feel like an extension of your brand.",
+  "upgradeButton": "Upgrade",
+  "brandLogoText": "Brand Logo",
+  "brandLogoDescription": "Upload an image of your logo. Maximum upload file size: 1MB",
+  "uploadImageButton": "Upload Image",
+  "saveButton": "Save",
+  "previewSection": "This is a preview",
+  "colorStyle": "Color Styles",
+  "revertOriginal": "Revert to original",
+  "colorView": [
+    "Primary Color",
+    "Secondary Color",
+    "Border Color",
+    "Content Color",
+    "Background"
+  ],
+  "toastMessage": {
+    "success": "",
+    "error": "File size cannot be more than 1MB",
+    "validationMessage": "To enable your Branded importer, you must upgrade to a paid plan."
+  },
+  "removeLinkText": "Remove",
+  "backgroundColorText": [
+    "White",
+    "Light Blue",
+    "Light Tan"
+  ],
+  "backgroundColorValue": [
+    "(255, 255, 255)",
+    "(246, 248, 251)",
+    "(250, 248, 246)"
+  ],
+  "defaultColor": {
+    "primaryColor": [
+      "rgb(0, 0, 0)",
+      "#000000"
+    ],
+    "secondaryColor": [
+      "rgb(14, 190, 190)",
+      "#0ebebe"
+    ],
+    "borderColor": [
+      "rgb(14, 190, 190)",
+      "#0ebebe"
+    ],
+    "contentColor": [
+      "rgb(205, 251, 251)",
+      "#cdfbfb"
+    ],
+    "backgroundColor": [
+      "rgb(250, 248, 246)",
+      "#faf8f6"
+    ]
+  },
+  "defaultColorValue": {},
+  "upgradeButtonToolTip": "Upgrade plan to use this function. Click here to obtain more information",
+  "images": {
+    "imageMoreThan1Mb": "src/support/uploadFiles/image-greater-than-1mb.jpg",
+    "imageLessThan1Mb": "logo-less-than-1mb.jpeg",
+    "fileUploadingErrorMessage": "File size cannot be more than 1MB",
+    "imageUploadedSuccessfullyMessage": "Importer style preferences updated successfully"
+  }
+}

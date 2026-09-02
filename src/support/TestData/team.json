@@ -1,0 +1,11 @@
+{
+  "teamURL": "https://staging-fuse-aws.swovo.com/account/team-members",
+  "email": "manpreet+50@swovo.com",
+  "validations": {
+    "invitationSuccessMessage": "Invitation sent to",
+    "deleteSuccessMessage": "was removed from the team",
+    "deleteConfirmationPopup": "Delete Team Member",
+    "emailNotValid": "Invalid email",
+    "emptyEmailErrorMessage": "Email is required"
+  }
+}
