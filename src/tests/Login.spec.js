@@ -9,7 +9,7 @@ test.describe('Test scripts of Signin page', () => {
 
   })
 
-  test.only('Verify that user is able to Login with valid credentials', async ({ loginPage }) => {
+  test('Verify that user is able to Login with valid credentials', async ({ loginPage }) => {
 
     await loginPage.loginWithValidCredential();
     await loginPage.verifyLoginSuccess(data.validationURL);
